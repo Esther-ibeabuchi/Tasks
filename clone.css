@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Xanh+Mono&display=swap');
+
+:root {
+--cyan: hsl(180, 70%, 51%);
+--gray: hsl(240, 25%, 90%);
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: rgb(10, 25, 47);
+    font-family: 'fira sans';
+    color: rgb(136, 146, 176);
+    padding: 1rem 2rem;
+    position: relative;
+    
+    
+}
+main {
+    margin:0 3rem;
+    
+}
+/* aside */
+.aside1 {
+    position: absolute;
+    position: fixed; 
+    height: auto;
+    top: 50%;
+    width: 100%;
+}
+.aside {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100vh;
+}
+
+i:hover {
+    color: var(--cyan);
+    transition: ease-in-out;
+    transition-duration: 2s;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    padding: 2rem;
+    margin-bottom: 4rem;
+    position: sticky;
+}
+.avatar {
+    width: 90%;
+    height: auto;
+text-align: left;
+}
+.img {
+    width: 10%;
+    border-radius: 10px;
+}
+.head2 {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    text-align: left;
+    
+}
+.nav {
+    width: 100%;
+    display: inline-block;
+    font-family: 'xanh mono';
+}
+a {
+    margin: 0 0.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(136, 146, 176);
+    
+}
+.num {
+color: var(--cyan);
+}
+a:hover {
+    color: var(--cyan);
+    transition: ease-in-out;
+}
+.btn1 {
+    width: 50%;
+padding: 0.5rem 1rem;
+border: 2px solid var(--cyan);
+border-radius: 10px;
+color: var(--cyan);
+
+}
+/* first paragraph */
+.profile {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 3rem;
+}
+.writeup {
+    width: 100%;
+    margin: 1rem;
+    text-align: left;
+}
+.h4 {
+    font-size: 2rem;
+    color: var(--cyan);
+    font-family: 'xanh mono';
+    margin-bottom: 0;
+}
+.profile-h1 {
+    font-size: 4rem;
+    margin-top: 0;
+    font-weight: bold;
+    color: var(--gray);
+    margin-bottom: 0;
+}
+.profile-h2 {
+    margin-top: 0;
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+.profile-p {
+    line-height: 26px;
+    font-family: 1.2rem;
+    margin-top: 1rem;
+}
+.avatar2 {
+    width: 50%;
+    height: auto;
+}
+.istock {
+    border-radius: 10px;
+    width: 100%;
+}
+.color {
+    color: var(--cyan);
+}
+.profile-btn {
+    padding: 1rem 2rem;
+border: 2px solid var(--cyan);
+border-radius: 10px;
+color: var(--cyan);
+margin-top: 3rem;
+background-color: rgb(10, 25, 47);
+font-weight: bold;
+}
+
+/* second paragraph */
+.about {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    padding-left: 4rem;
+    margin-bottom: 3rem;
+}
+.about1 {
+    width: 100%;
+    height: auto;
+}
+.avatar3 {
+    width: 45%;
+}
+.istock2 {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid cyan;
+}
+.about-h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    font-weight: bold;
+    color: var(--gray);
+}
+.about-pg {
+    line-height: 26px;
+}
+.numb {
+    color: var(--cyan);
+    font-family: 'xanh mono';
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+/* education */
+.education {
+    width: 100%;
+}
+.sub {
+    display: flex;
+    width: 80%;
+    padding-left: 4rem;
+    gap: 10px;
+    margin: 2rem auto;
+    text-align: left;
+}
+.study {
+    width: 100%;
+    line-height: 26px;
+}
+.details {
+    width: 100%;
+}
+.study-h1 {
+    color: cyan;
+    font-size: 2rem;
+}
+.study-h4 {
+    margin-top: 0.9rem;
+    font-size: 1.5rem;
+}
+.study-pg {
+    color: var(--gray);
+    margin-top: 0.3rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.details-h4 {
+    font-size: 1.5rem;
+    color: var(--gray);
+}
+.details-pg {
+    margin-top: 0.8rem;
+    line-height: 26px;
+}
+/* what can i do? */
+.question {
+    width: 100%;
+    margin-bottom: 4rem;
+}
+.question-h4 {
+    font-size: 1.6rem;
+}
+.list {
+    margin-top: 1rem;
+    display: flex;
+    gap: 20px;
+    padding-left: 4rem;
+    width: 50%;
+}
+ul {
+    width: 100%;
+    line-height: 30px;
+    font-size: 1.2rem;
+}
+
+/* project */
+.project {
+    width: 100%;
+}
+.project-h3 {
+font-size: 1.6rem;
+text-align: center;
+}
+.project-pg {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    text-align: left;
+}
+.projects {
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    margin: 1rem auto;
+    width: 80%;
+}
+.block {
+    margin: 1rem auto;
+    background-color: rgb(16, 39, 73);
+    border: 1px solid rgb(16, 39, 73);
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 1rem;
+    padding-bottom: 0;
+    display: block;
+}
+.block-h3 {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+.block-pg {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+}
+.block-btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.3rem;
+    font-size: 1.3rem;
+    color: var(--cyan);
+    padding: 0.5rem;
+    background-color: rgb(16, 39, 73);
+    border: 1px solid var(--cyan);
+    border-radius: 10px;
+}
+.block-btn:hover {
+    background-color: rgb(19, 47, 88)
+    
+}
+.two {
+margin-bottom: 6rem;
+}
+/* what is next */
+.next {
+    margin-top: 8rem;
+    text-align: center;
+}
+.next-h4 {
+    color: var(--cyan);
+    font-family: 'xanh mono';
+    font-size: 1.2rem;
+}
+.next-h1 {
+    font-size: 4rem;
+    color: var(--gray);
+    margin-top: 1.3rem;
+}
+.next-pg {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+.next-btn {
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+border: 2px solid var(--cyan);
+border-radius: 10px;
+color: var(--cyan);
+background-color: rgb(10, 25, 47);
+}
+/* footer */
+.footer {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'xanh mono';
+}
+.aside2 {
+    text-align: center;
+    margin-top: 9rem;
+    font-size: 1.2rem;
+    font-family: 'xanh mono';
+}
+@media screen and (max-width: 1000px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+    .profile, .about, .sub {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .writeup, .about1 {
+        width: 100%;
+        margin-bottom: 4rem;
+        
+    }
+    .about-btn {
+        text-align: center;
+        
+    }
+    .avatar2, .avatar3 {
+        text-align: center;
+        width: 100%;
+    }
+    .istock, .istock2 {
+        width: 50%;
+    }
+    .projects {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    /* .aside {
+display: flex;
+flex-direction: row;
+width: 100%;
+height: auto;
+position: absolute;
+
+bottom: 0%;
+text-align: center;
+    } */
+
+}
+@media screen and (max-width: 682px) {
+    .head2 {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+    .profile, .about, .Education, .question {
+        text-align: center;
+        width: 100%;
+    }
+    .about-pg {
+        text-align: left;
+    }
+    .istock2 {
+        width: 100%;
+    }
+    .istock {
+        width: 90%;
+    }
+    .sub {
+        padding-left: 1rem;
+        text-align: center;
+    }
+    .study-h1 {
+        line-height: 36px;
+    }
+    .list {
+        display: flex;
+        gap: 30px;
+        text-align: left;
+        justify-content: space-evenly;
+        width: 100%;
+        
+    }
+    .project-pg, .about-pg {
+        text-align: center;
+    }
+    .about {
+        padding-left: 0.1rem;
+    }
+    
+}
